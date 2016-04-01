@@ -51,7 +51,7 @@ public class MainWindow extends JFrame{
 		}
 		
 		else if (myView == WindowState.RECEIVE_STATUS_DATA) {
-			
+			System.out.println("HIT");
 		}
 		else if (myView == WindowState.MATCH) {
 			

@@ -4,9 +4,11 @@ import app.windowcontainers.MainWindow;
 
 public class Main {
 
+	public static MainWindow window;
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		MainWindow window = new MainWindow(MainWindow.WindowState.START);
+		window = new MainWindow(MainWindow.WindowState.START);
 	}
 
 }
