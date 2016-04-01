@@ -3,6 +3,7 @@ package app.windowcontainers;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
+import app.windowcontainers.screens.MatchDataReceive;
 import app.windowcontainers.screens.StartPage;
 
 public class MainWindow extends JFrame{
@@ -52,6 +53,9 @@ public class MainWindow extends JFrame{
 		
 		else if (myView == WindowState.RECEIVE_STATUS_DATA) {
 			System.out.println("HIT");
+			MatchDataReceive page = new MatchDataReceive();
+			add(page);
+			this.setVisible(true);
 		}
 		else if (myView == WindowState.MATCH) {
 			

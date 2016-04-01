@@ -18,7 +18,7 @@ public class StartPage extends JPanel {
 
 	public StartPage() {
 		this.setLayout(new BorderLayout());
-		JLabel label = new JLabel("       FRC TEAM #8: STRONGHOLD Scouter");
+		JLabel label = new JLabel("       FRC Team #8: Stronghold Scouter");
 		label.setFont(STARTUP_FONT);
 		this.add(label, BorderLayout.NORTH);
 		label.setVisible(true);
