@@ -25,7 +25,7 @@ public class MainWindow extends JFrame{
 	}
 	
 	private void setup() {
-		this.setTitle("Stronhold Scouter");
+		this.setTitle("Stronghold Scouter");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setSize(WIDTH, HEIGHT);
 		this.setResizable(false);
