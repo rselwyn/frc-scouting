@@ -1,6 +1,9 @@
 package app.windowcontainers;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+import app.windowcontainers.screens.StartPage;
 
 public class MainWindow extends JFrame{
 	
@@ -25,7 +28,7 @@ public class MainWindow extends JFrame{
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setSize(WIDTH, HEIGHT);
 		this.setResizable(false);
-		this.setVisible(true);
+//		this.setVisible(true);
 	}
 	
 	public static enum WindowState{
@@ -42,8 +45,11 @@ public class MainWindow extends JFrame{
 	
 	private void updateMyView() {
 		if (myView == WindowState.START) {
-			
+			StartPage p = new StartPage();
+			add(p);
+			this.setVisible(true);
 		}
+		
 		else if (myView == WindowState.RECEIVE_STATUS_DATA) {
 			
 		}
