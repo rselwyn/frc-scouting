@@ -4,7 +4,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import app.windowcontainers.screens.MatchDataReceive;
+import app.windowcontainers.screens.MatchView;
 import app.windowcontainers.screens.StartPage;
+import app.windowcontainers.screens.SubmitView;
 
 public class MainWindow extends JFrame{
 	
@@ -45,6 +47,7 @@ public class MainWindow extends JFrame{
 	}
 	
 	private void updateMyView() {
+		this.getContentPane().removeAll();
 		if (myView == WindowState.START) {
 			StartPage p = new StartPage();
 			add(p);
@@ -58,10 +61,14 @@ public class MainWindow extends JFrame{
 			this.setVisible(true);
 		}
 		else if (myView == WindowState.MATCH) {
-			
+			MatchView view = new MatchView();
+			add(view);
+			this.setVisible(true);
 		}
 		else if (myView == WindowState.MATCH_COMPLETE) {
-			
+			SubmitView view = new SubmitView();
+			add(view);
+			this.setVisible(true);
 		}
 	}
 }

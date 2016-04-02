@@ -1,6 +1,5 @@
 package app.windowcontainers.screens;
 
-import static app.globals.Constants.STARTUP_FONT;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
@@ -14,6 +13,7 @@ import javax.swing.JTextField;
 
 import app.Main;
 import app.globals.Constants;
+import app.globals.Globals;
 import app.windowcontainers.MainWindow;
 
 public class MatchDataReceive extends JPanel {
@@ -21,7 +21,7 @@ public class MatchDataReceive extends JPanel {
 	public MatchDataReceive() {
 		this.setLayout(new BorderLayout());
 		JLabel label = new JLabel("                   Enter Team Information");
-		label.setFont(STARTUP_FONT);
+		label.setFont(Constants.STARTUP_FONT);
 		this.add(label, BorderLayout.NORTH);
 		label.setVisible(true);
 		
@@ -57,8 +57,8 @@ public class MatchDataReceive extends JPanel {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				try{
-					Constants.currentMatch = Integer.parseInt(entryMatch.getText());
-					Constants.teamWatching = Integer.parseInt(entryTeam.getText());
+					Globals.currentMatch = Integer.parseInt(entryMatch.getText());
+					Globals.teamWatching = Integer.parseInt(entryTeam.getText());
 					System.out.println("Good");
 					Main.window.updateView(MainWindow.WindowState.MATCH);
 				}

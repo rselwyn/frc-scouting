@@ -8,7 +8,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		window = new MainWindow(MainWindow.WindowState.RECEIVE_STATUS_DATA);
+		window = new MainWindow(MainWindow.WindowState.MATCH_COMPLETE);
 	}
 
 }

@@ -1,5 +1,11 @@
 package app.windowcontainers.screens;
 
-public class MatchView {
+import javax.swing.JPanel;
 
+public class MatchView extends JPanel{
+
+	public MatchView() {
+		//The entire match view is here
+	}
+	
 }
