@@ -19,10 +19,16 @@ public class SubmitView extends JPanel{
 
 	public SubmitView() {
 		this.setLayout(new BorderLayout());
-		JLabel label = new JLabel("         Thank You For Completing Your Scouting of Match #"+Globals.currentMatch);
+
+		JLabel label = new JLabel("Thank You For Completing Your Scouting of Match #"+Globals.currentMatch);
 		label.setFont(EXIT_FONT);
-		this.add(label, BorderLayout.NORTH);
+		
+		JPanel panel = new JPanel(new FlowLayout());
+		panel.add(label);
 		label.setVisible(true);
+		
+		this.add(panel, BorderLayout.NORTH);
+		panel.setVisible(true);
 		
 		JPanel main = new JPanel();
 		main.setLayout(new FlowLayout());
@@ -37,6 +43,7 @@ public class SubmitView extends JPanel{
 			}
 			
 		});
+		
 		main.add(go);
 		this.add(main, BorderLayout.CENTER);
 		main.setVisible(true);

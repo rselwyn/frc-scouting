@@ -31,7 +31,6 @@ public class MainWindow extends JFrame{
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setSize(WIDTH, HEIGHT);
 		this.setResizable(false);
-//		this.setVisible(true);
 	}
 	
 	public static enum WindowState{

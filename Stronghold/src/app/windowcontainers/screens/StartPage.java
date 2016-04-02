@@ -18,11 +18,19 @@ public class StartPage extends JPanel {
 
 	public StartPage() {
 		this.setLayout(new BorderLayout());
-		JLabel label = new JLabel("       FRC Team #8: Stronghold Scouter");
+		
+		//All the stuff to get the top layout
+		JLabel label = new JLabel("FRC Team #8: Stronghold Scouter");
 		label.setFont(STARTUP_FONT);
-		this.add(label, BorderLayout.NORTH);
+		
+		JPanel panel = new JPanel(new FlowLayout());
+		panel.add(label);
 		label.setVisible(true);
 		
+		this.add(panel, BorderLayout.NORTH);
+		panel.setVisible(true);
+		
+		//all the stuff to get the start button
 		JPanel main = new JPanel();
 		main.setLayout(new FlowLayout());
 		
