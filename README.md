@@ -1,1 +1,1 @@
-#FRC Scouing App
+#FRC Scouting App
